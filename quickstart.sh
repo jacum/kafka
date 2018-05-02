@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #
 # This script deploys Mesos Kafka on a minimesos cluster and adds a single broker
 #
