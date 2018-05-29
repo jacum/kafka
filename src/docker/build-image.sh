@@ -51,6 +51,7 @@ find $tmp_dir -type f -name 'kafka-mesos*.jar' -delete
 cd $base_dir && ./gradlew jar && cd -
 cp $base_dir/kafka-mesos*.jar $tmp_dir
 cp $base_dir/kafka-mesos*.sh $tmp_dir
+cp $base_dir/kafka.yml $tmp_dir
 
 # build docker image
 sudo="sudo"
