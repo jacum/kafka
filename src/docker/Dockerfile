@@ -14,12 +14,10 @@ RUN \
 
 # Add kafka-mesos & kafka
 COPY .docker/kafka* /opt/kafka-mesos/
-COPY .docker/jmx* /opt/kafka-mesos/
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 WORKDIR /opt/kafka-mesos
 EXPOSE 7000
-EXPOSE 29000
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
