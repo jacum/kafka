@@ -18,6 +18,7 @@ COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 
 WORKDIR /opt/kafka-mesos
 EXPOSE 7000
+EXPOSE 29000
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 

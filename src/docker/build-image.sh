@@ -43,6 +43,7 @@ done
 # download kafka
 kafka_file=kafka_$scala_version-$kafka_version.tgz
 wget -nc -P $tmp_dir https://archive.apache.org/dist/kafka/$kafka_version/$kafka_file
+wget -nc -P $tmp_dir https://repo1.maven.org/maven2/io/prometheus/jmx/jmx_prometheus_javaagent/0.3.1/jmx_prometheus_javaagent-0.3.1.jar
 find $tmp_dir -type f -name 'kafka*.tgz' -not -name "$kafka_file" -delete
 
 # build kafka-mesos-jar
